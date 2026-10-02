@@ -1,0 +1,13 @@
+id,claim,piece,status,facts_row,owner,due,where_in_text
+CL-01,"Texting is on the Pro and Crew plans.",email,SOURCED,F-03,,,drafts/final.md:17
+CL-02,"Job Thread keeps your texts, calls and emails with a customer on one job card.",email,SOURCED,F-01 F-02 F-07,,,drafts/final.md:15
+CL-03,"[Replies show up next to the text you sent.]",email,TO-CONFIRM,F-11,Dan Kowalski,2026-10-06,drafts/final.md:17
+CL-04,"Texting from a business number needs US registration with the carrier registry.",email,SOURCED,F-08,,,drafts/final.md:21
+CL-05,"[Who submits the registration is still open.]",email,PROPOSAL,F-16,,,drafts/final.md:21
+CL-06,"A plumbing company owner told us: ""Half my day is texting people back.""",social,SOURCED,Q-01,,,drafts/final.md:37
+CL-07,"Starter, Pro and Crew cost $29, $79 and $149 a month.",page,SOURCED,F-04,,,drafts/final.md:64
+CL-08,"You can try Acme free for 14 days.",page,SOURCED,F-05,,,drafts/final.md:64
+CL-09,"Acme sends 6 fields to LedgerLite. The import is one way.",page,SOURCED,F-06,,,drafts/final.md:60
+CL-10,"Call recording rules differ by state.",page,SOURCED,F-09,,,drafts/final.md:66
+CL-11,"Owners on Starter will not see it.",partner-note,SOURCED,F-03,,,drafts/final.md:74
+CL-12,"[Whether Acme or the owner submits the form is still open.]",partner-note,PROPOSAL,F-16,,,drafts/final.md:76

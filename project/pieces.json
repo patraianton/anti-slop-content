@@ -1,0 +1,12 @@
+{
+  "pieces": [
+    {"id": "email", "heading": "(?i)^(?:\\d+\\.\\s*)?(?:launch )?email$", "voice": "house", "plain": true, "grade_max": 9, "hook": "after-greeting"},
+    {"id": "social", "heading": "(?i)^(?:\\d+\\.\\s*)?(?:social|social post|linkedin post)$", "voice": "house", "plain": true},
+    {"id": "page", "heading": "(?i)^(?:\\d+\\.\\s*)?(?:page|landing page)$", "voice": "house", "plain": true},
+    {"id": "partner-note", "heading": "(?i)^(?:\\d+\\.\\s*)?partner note$", "voice": "house", "plain": true, "grade_max": 9},
+    {"id": "how-made", "heading": "(?i)^(?:\\d+\\.\\s*)?(?:how this was made|how it was made|how-made)$", "voice": "author", "plain": false, "grade_max": 11, "grade_scope": "numbered-steps"}
+  ],
+  "labels": [],
+  "max_marks": 7,
+  "dotted_class": "tbc"
+}

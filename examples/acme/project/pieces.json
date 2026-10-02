@@ -1,0 +1,12 @@
+{
+  "pieces": [
+    {"id": "email", "heading": "(?i)\\bemail\\b", "voice": "house", "plain": true, "grade_max": 9, "hook": "after-greeting"},
+    {"id": "social", "heading": "(?i)\\b(?:social|linkedin|post)\\b", "voice": "house", "plain": true},
+    {"id": "page", "heading": "(?i)\\b(?:page|webinar|landing|agenda)\\b", "voice": "house", "plain": true},
+    {"id": "partner-note", "heading": "(?i)\\bpartner\\b", "voice": "house", "plain": true, "grade_max": 9},
+    {"id": "how-made", "heading": "(?i)how (?:this|it) was made|\\bapproach\\b", "voice": "author", "plain": false, "grade_max": 11, "grade_scope": "numbered-steps"}
+  ],
+  "labels": [],
+  "max_marks": 7,
+  "dotted_class": "tbc"
+}

@@ -1,0 +1,19 @@
+{
+  "voice": 1,
+  "landmines": {
+    "product-claims": 1,
+    "compliance-promises": 1,
+    "pricing-plans": 1,
+    "setup-timelines": 1,
+    "competitors-partners": 1,
+    "numbers-and-sources": 1,
+    "research-absence": 1,
+    "process-claims": 1,
+    "plain-language": 1
+  },
+  "checks": {
+    "repeats": 1,
+    "stray-labels": 1,
+    "plain": 1
+  }
+}

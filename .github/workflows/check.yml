@@ -1,0 +1,37 @@
+name: check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Self-test
+        run: python tools/selftest.py
+
+      - name: Final draft of the example exits 0
+        run: >
+          python tools/check.py examples/acme/drafts/final.md
+          --project examples/acme/project
+          --claims examples/acme/project/claims.csv
+
+      - name: First draft of the example exits 1
+        shell: bash
+        run: |
+          set +e
+          python tools/check.py examples/acme/drafts/v1.md --project examples/acme/project
+          test $? -eq 1
+
+      - name: Blank project template loads and runs (exit 0 or 1, never 3)
+        shell: bash
+        run: |
+          set +e
+          python tools/check.py tools/fixtures/smoke.md --project project
+          test $? -le 1

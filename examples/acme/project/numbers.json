@@ -1,0 +1,162 @@
+[
+  {
+    "id": "N-01",
+    "value": 41,
+    "unit": "help center articles",
+    "what": "Acme help center articles, all opened",
+    "precision": "exact",
+    "source_file": "research/help-center-index.md",
+    "source_line": 1,
+    "as_of": "2026-09-15",
+    "caveat": "Videos embedded in some articles were not watched.",
+    "conflicts": [38]
+  },
+  {
+    "id": "N-02",
+    "value": 12,
+    "unit": "release notes",
+    "what": "Acme release notes, all opened",
+    "precision": "exact",
+    "source_file": "research/release-notes-index.md",
+    "source_line": 1,
+    "as_of": "2026-09-15",
+    "conflicts": []
+  },
+  {
+    "id": "N-03",
+    "value": 9,
+    "unit": "webinar recordings",
+    "what": "Acme webinar recordings, captions read in full",
+    "precision": "exact",
+    "source_file": "research/webinar-captions.md",
+    "source_line": 1,
+    "as_of": "2026-09-15",
+    "caveat": "Screen shares have no captions; text on screen was not read.",
+    "conflicts": []
+  },
+  {
+    "id": "N-04",
+    "value": 5,
+    "unit": "source types",
+    "what": "Rows in the coverage table",
+    "precision": "exact",
+    "source_file": "coverage.md",
+    "source_line": 38,
+    "as_of": "2026-09-15",
+    "conflicts": []
+  },
+  {
+    "id": "N-05",
+    "value": 8,
+    "unit": "partner documentation pages",
+    "what": "LedgerLite and MapRoute documentation pages found",
+    "precision": "exact",
+    "source_file": "research/partner-docs.md",
+    "source_line": 1,
+    "as_of": "2026-09-15",
+    "conflicts": []
+  },
+  {
+    "id": "N-06",
+    "value": 3,
+    "unit": "partner documentation pages read in full",
+    "what": "Partner documentation pages read in full",
+    "precision": "exact",
+    "source_file": "research/partner-docs.md",
+    "source_line": 2,
+    "as_of": "2026-09-15",
+    "conflicts": []
+  },
+  {
+    "id": "N-07",
+    "value": 6,
+    "unit": "fields",
+    "what": "Fields the LedgerLite import sends (facts row F-06)",
+    "precision": "exact",
+    "source_file": "facts.md",
+    "source_line": 43,
+    "as_of": "2026-08-02",
+    "conflicts": []
+  },
+  {
+    "id": "N-08",
+    "value": 14,
+    "unit": "days",
+    "what": "Free trial length for owners who sign up on the site (facts row F-05)",
+    "precision": "exact",
+    "source_file": "facts.md",
+    "source_line": 42,
+    "as_of": "2026-09-20",
+    "conflicts": []
+  },
+  {
+    "id": "N-09",
+    "value": 29,
+    "unit": "$ per month, Starter",
+    "what": "Starter price (facts row F-04)",
+    "precision": "exact",
+    "source_file": "facts.md",
+    "source_line": 41,
+    "as_of": "2026-09-20",
+    "conflicts": []
+  },
+  {
+    "id": "N-10",
+    "value": 79,
+    "unit": "$ per month, Pro",
+    "what": "Pro price (facts row F-04)",
+    "precision": "exact",
+    "source_file": "facts.md",
+    "source_line": 41,
+    "as_of": "2026-09-20",
+    "conflicts": [948]
+  },
+  {
+    "id": "N-11",
+    "value": 149,
+    "unit": "$ per month, Crew",
+    "what": "Crew price (facts row F-04)",
+    "precision": "exact",
+    "source_file": "facts.md",
+    "source_line": 41,
+    "as_of": "2026-09-20",
+    "conflicts": []
+  },
+  {
+    "id": "N-12",
+    "value": 335,
+    "unit": "complaints",
+    "what": "Complaints in public reviews of one competing scheduling product, all modules. Two review sites share some reviews, so the total is close, not exact",
+    "precision": "double-counted",
+    "source_file": "research/competitor-reviews.md",
+    "source_line": 1,
+    "as_of": "2026-09-18",
+    "caveat": "Counts are close, not exact: two sources cover the same review sites.",
+    "conflicts": []
+  },
+  {
+    "id": "T-dispatchpro-complaints",
+    "kind": "table",
+    "what": "Complaints per module in public reviews of DispatchPro, total 335. A table is an input for ranks and shares, not a printed count",
+    "rows": {"Support": 120, "Billing": 95, "Mobile app": 80, "Scheduling": 40}
+  },
+  {
+    "id": "R-mobile",
+    "kind": "rank",
+    "what": "The mobile app is the third row by value, largest first",
+    "phrase": "third-largest complaint",
+    "table": "T-dispatchpro-complaints",
+    "row": "Mobile app",
+    "result": 3
+  },
+  {
+    "id": "S-support-billing",
+    "kind": "share",
+    "what": "Support and Billing are 215 of 335, which is 64.2 percent",
+    "phrase": "64% of all complaints",
+    "table": "T-dispatchpro-complaints",
+    "rows": ["Support", "Billing"],
+    "result": 64,
+    "precision": "double-counted"
+  }
+]
